@@ -11,7 +11,7 @@ h1 {
   font-size: 2.3em;
 }
 h2 {
-  margin-top: 70px;
+  margin-top: 100px;
   font-size: 1.75em;
   margin-bottom: 45px;
 }
@@ -25,7 +25,7 @@ h3 {
     }
 
 .featured_title {
-    margin-top: 30px;
+    margin-top: 75px;
 }
 
 body {
@@ -38,12 +38,8 @@ body {
 }
 
 p {
-margin-bottom: 40px;
-font-family: "Inter";
-font-weight: normal;
-font-weight: 400;
-font-size: 0.8em;
-line-height: 1.7;    
+margin: 20px;
+margin-bottom: 30px;    
 }
 
 .logo {
@@ -148,7 +144,7 @@ nav img {
     
 .products_section {
     display: grid;
-    grid-template-columns: repeat(2,200px);
+    grid-template-columns: repeat(2,180px);
     grid-gap: 0px
 }
 
@@ -177,10 +173,10 @@ nav img {
 }
 
 .product_image {
-    margin-bottom: 22px;
-    width: 190px;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-bottom: 35px;
+    width: 170px;
+    margin-top: 8px;
+    margin-left: 4px;
 }
 
 .center_column-container {
@@ -188,7 +184,80 @@ nav img {
     justify-content: center;
 }
 
+.product_two {
+    border: 1px solid rgb(192, 192, 192);
+    background: rgb(250, 250, 250);  
+    height: 370px;
+}
+
+.products_section_two {
+    grid-template-columns: repeat(1,360px);
+    max-width: 360px;
+    display: grid;
+    grid-gap: 50px
+}
+
+.product_image_two {
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.view-info_button_two {
+    margin-left: 118.5px;
+    background-color: #373736;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: #ffffff;
+    box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+}
+
+.camera_icon {
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/*footer*/
+
+footer {
+    border: 1px solid rgb(192, 192, 192);
+    word-spacing: 15px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    line-height: 2.5;
+}
+
+footer a {
+    color: #000;
+}
+
+footer img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.footer_text, p {
+    font-family: "Inter";
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.7;
+}
+
 @media only screen and (min-width: 650px) {
+
+.logo {
+    width: 150px;
+}    
 
 body {
     background-image: url('../images/texture_spiral.svg'), url('../images/texture_line.svg');
@@ -197,6 +266,12 @@ body {
 }
 .products_section {
     grid-template-columns: repeat(3,200px);
+}
+
+.product_image {
+    width: 192px;
+    margin-left: 4px;
+    margin-bottom: 27px;
 }
 
 /*Navigation menu*/
@@ -221,7 +296,11 @@ nav a {
     font-weight: 900;
 }
 
-.movies_text, .help_text {
+nav img {
+    background: transparent;
+}
+
+.help_text {
     display: none;
 }
 
@@ -229,6 +308,10 @@ nav a {
     text-decoration: underline;
     padding-right: 15px;
 }
+
+/*Footer*/
+
+.help_icon
 
 nav img {
     width: 20px;
@@ -255,20 +338,25 @@ nav img {
 
 @media only screen and (min-width: 750px) {
   
+    .logo {
+        width: 180px;
+    }  
+
     body {
         background-size: 65%, 13%;
     } 
 
-    .products_section {
-        grid-template-columns: repeat(3,230px);
+    p {
+        margin-bottom: 20px;
     }
+
     .product_image {
         width: 220px;
         margin-left: 4px;
     }
     
     .product {
-        height: 300px;
+        height: 330px;
     }
     .product-container {
         height: 340px;
@@ -277,6 +365,32 @@ nav img {
     .view-info_button {
         margin-left: 53.5px;
     } 
+
+    .products_section {
+        grid-template-columns: repeat(3,230px);
+    }
+
+    .product_two {
+        height: 330px;
+    }
+
+    .products_section_two {
+        grid-template-columns: repeat(1,575px);
+        max-width: 575px;        
+    }
+
+    .product_image_two {
+        width: 310px;
+    }
+
+    .view-info_button_two {
+        margin-left: 62px;
+    }
+    
+    .camera_icon {
+        width: 65px;
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -288,8 +402,49 @@ nav img {
 
 @media only screen and (min-width: 1000px) {
   
+    p {
+        margin-bottom: 40px;
+    }
+    
+    .product {
+        height: 410px;
+    }
+
     .products_section {
-        grid-template-columns: repeat(4,230px);
+        grid-template-columns: repeat(3,307px);
+    }
+
+    .product-container {
+        height: 435px;
+    }
+
+    .product_image {
+        width: 299px;
+        margin-left: 4px;
+    }
+
+    .view-info_button {
+        margin-left: 92px;
+    }
+
+    .products_section_two {
+        grid-template-columns: repeat(2,460px);
+        max-width: 1000px;
+        grid-gap: 10px;        
+    }
+
+    .product_image_two {
+        width: 230px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .view-info_button_two {
+        margin-left: 168.5px;
+    }
+
+    .product_two {
+        height: 380px;
     }
 }
 
@@ -304,47 +459,42 @@ nav img {
         margin-left: 25px;
     }
 
-    .products_section {
-        grid-template-columns: repeat(5,230px);
+    p {
+        margin-bottom: 45px;
     }
 
-    .product_two {
-        border: 1px solid rgb(192, 192, 192);
-        background: rgb(250, 250, 250);  
-        height: 330px;
+    .products_section {
+        grid-template-columns: repeat(6,210px);
+    }
+    
+    .product-container {
+        height: 325px;
+    }
+
+    .product_image {
+        width: 202px;
+        margin-left: 4px;
+    }
+
+    .product {
+        height: 310px;
+    }
+
+    .view-info_button {
+        margin-left: 42px;
     }
 
     .products_section_two {
-        grid-template-columns: repeat(2,575px);
-        display: grid;
-        grid-gap: 0px
+        grid-template-columns: repeat(2,520px);
+        max-width: 1200px;
     }
-
-    .product_image_two {
-        width: 310px;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        float: left;
+    
+    .product_two {
+        height: 330px;
     }
 
     .view-info_button_two {
-        margin-left: 62px;
-        background-color: #373736;
-        padding: 12px 22px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1em;
-        color: #ffffff;
-        box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
-    }
-    
-    .camera_icon {
-        width: 65px;
-        margin-left: 10px;
-        margin-top: 25px;
+        margin-left: 198.5px;
+        margin-top: 0px;
     }
 }
