@@ -1,5 +1,6 @@
 h1,
-h2 {
+h2,
+h4 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -10,10 +11,20 @@ h1 {
   margin-top: 40px;
   font-size: 2.3em;
 }
+
+.italic {
+  font-style: italic;
+  margin-right: 8px;
+}
+
 h2 {
   margin-top: 100px;
   font-size: 1.75em;
   margin-bottom: 45px;
+}
+
+.no_top-margin {
+  margin-top: 0px;
 }
 
 h3 {
@@ -75,6 +86,61 @@ p {
   right: 17px;
 }
 
+/*Choose a category buttons*/
+
+.movie_categories {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.category_styling {
+  background-color: #ffffff;
+  padding: 11px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  color: #000;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+}
+
+/*Search bar*/
+
+.style_search-bar {
+  padding: 13px;
+  width: 320px;
+  border-radius: 25px;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.center_search-bar {
+  display: grid;
+  justify-content: center;
+}
+
+.category_styling_two {
+  background-color: #373736;
+  color: #ffffff;
+  padding: 11px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+}
+
 /*Navigation menu*/
 
 nav,
@@ -85,7 +151,7 @@ nav,
 nav a {
   display: block;
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: normal;
@@ -138,6 +204,10 @@ nav img {
 
 .home_icon {
   padding-left: 35px;
+}
+
+.current_page {
+  text-decoration: underline;
 }
 
 /*Products*/
@@ -225,6 +295,137 @@ nav img {
   margin-top: 30px;
 }
 
+.products_section_two {
+  grid-template-columns: repeat(1, 360px);
+  max-width: 360px;
+  display: grid;
+  grid-gap: 50px;
+}
+
+.products_section_three {
+  max-width: 500px;
+}
+
+.product_three {
+  max-height: 100%;
+  border: 1px solid rgb(192, 192, 192);
+  background: rgb(250, 250, 250);
+  line-height: 2.3em;
+  margin-top: 25px;
+}
+
+.product_image_three {
+  max-width: 100%;
+  object-fit: contain;
+  float: top;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.regular-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.center_product-info {
+  margin-left: 20px;
+  font-size: 1.4em;
+}
+
+.play_icon {
+  width: 35px;
+  margin-left: 5px;
+}
+
+.button_center {
+  display: flex;
+  justify-content: center;
+}
+
+.view-info_button_three {
+  background-color: #373736;
+  padding: 6px 38px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #ffffff;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+  margin-bottom: 60px;
+}
+
+/*Forms*/
+
+form {
+  display: inline-block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.86em;
+  margin-top: 100px;
+}
+
+.center_form {
+  text-align: center;
+}
+
+.legend {
+  margin-bottom: 75px;
+  font-size: 2.6em;
+}
+
+.form__input {
+  display: block;
+  border-radius: 25px;
+  height: 35px;
+  width: 310px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.checkout-button {
+  background-color: #bf443f;
+  padding: 7px 26px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #ffffff;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+}
+
+.visa_icon {
+  width: 40px;
+  margin-bottom: 0px;
+}
+
+.mastercard_icon {
+  width: 35px;
+  margin-bottom: 7px;
+  margin-left: 20px;
+}
+
+.paypal_icon {
+  width: 95px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+.form-text_bold {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
 /*footer*/
 
 footer {
@@ -284,6 +485,18 @@ footer p a {
     margin-left: 41px;
   }
 
+  /*Choose a category buttons*/
+
+  .movie_categories {
+    grid-template-columns: repeat(3, 110px);
+  }
+
+  /*Search bar*/
+
+  .style_search-bar {
+    width: 420px;
+  }
+
   /*Navigation menu*/
 
   nav {
@@ -315,8 +528,36 @@ footer p a {
   }
 
   .home_text {
-    text-decoration: underline;
     padding-right: 15px;
+  }
+
+  /*Forms*/
+
+  form {
+    margin-top: 90px;
+  }
+
+  .form__input {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+
+  .visa_icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .mastercard_icon {
+    width: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .paypal_icon {
+    width: 115px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   /*Footer*/
@@ -361,6 +602,19 @@ footer p a {
 
   body {
     background-size: 65%, 13%;
+  }
+
+  /*Search bar*/
+
+  .style_search-bar {
+    width: 520px;
+  }
+
+  /*Choose a category buttons*/
+
+  .movie_categories {
+    grid-template-columns: repeat(6, 110px);
+    grid-gap: 15px;
   }
 
   p {
@@ -466,6 +720,20 @@ footer p a {
 
   .product_two {
     height: 380px;
+  }
+
+  .products_section_three {
+    max-width: 1000px;
+    margin-top: 10px;
+  }
+
+  .product_three {
+    height: 650px;
+  }
+
+  .product_image_three {
+    float: left;
+    margin-right: 30px;
   }
 
   footer {

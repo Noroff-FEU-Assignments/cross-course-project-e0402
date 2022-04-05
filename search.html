@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Square Eyes | Home</title>
+    <title>Square Eyes | Search</title>
 </head>
 <body>
 <header>
@@ -20,8 +20,8 @@
             <input type="checkbox" id="hamburger-menu">
             <label for="hamburger-menu"><img src="images/hamburger-menu.svg" alt="Hamburger menu" class="hamburger-dropdown" /></label>
             <nav>
-                <a href="index.html" class="home_text current_page">Home<img src="images/home_icon.svg" class="home_icon" /></a>
-                <a href="search.html" class="search_text">Search<img src="images/search.svg" class="search_icon" /></a>
+                <a href="index.html" class="home_text">Home<img src="images/home_icon.svg" class="home_icon" /></a>
+                <a href="search.html" class="search_text current_page">Search<img src="images/search.svg" class="search_icon" /></a>
                 <a href="account.html" class="account_text">Account<img src="images/account.svg" class="account_icon" /></a>
                 <a href="contact.html" class="help_text">Help<img src="images/help.svg" class="help_icon" /></a>
                 <a href="landing-page.html" class="log-out_text">Log out<img src="images/log-out.svg" class="log-out_icon" /></a>
@@ -36,8 +36,32 @@
         <a href="http://www.gmail.com"><img src="images/newsletter-icon.svg" alt="Newsletter icon" class="media_icons"></a>    
     </section>
     <section>
-        <h1>Browse our wide selection of movies</h1>
-        <h2>Top recommendations for you</h2>
+        <h1>Choose a category <span class="italic">or</span> type something</h1>
+    </section>
+    <section class="movie_categories">
+        <div>
+            <a href="search_drama.html" class="category_styling">Drama</a>
+        </div>    
+        <div>
+            <a href="" class="category_styling">Comedy</a>
+        </div>
+        <div>
+            <a href="" class="category_styling">Thriller</a>
+        </div>
+        <div>
+            <a href="" class="category_styling">Action</a>
+        </div>
+        <div>
+            <a href="" class="category_styling">Sci-fi</a>
+        </div>
+        <div>
+            <a href="" class="category_styling">History</a>
+        </div>
+    </section>
+    <section class="center_search-bar">
+        <form action="submit.php" method="post">
+            <input type="search" name="searchbar" class="style_search-bar">
+        </form>
     </section>
     <section class="center_column-container">
         <div class="products_section">
@@ -77,48 +101,6 @@
                     <a href="product-info.html" class="view-info_button">View info</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <h2 class="featured_title">Featured newcommers<img src="images/old-camera.svg" class="camera_icon"></h2>    
-    <section class="center_column-container">
-        <div class="products_section_two">
-            <div class="product-container_two">
-                <div class="product_two">
-                    <img src="images/movie-seven.jpg" alt="Movie seven" class="product_image_two">
-                    <h3>Lorem Ipsum dolor sit</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nisi consequuntur repellendus modi pariatur ratione perferendis nesciunt distinctio laborum, aperiam ipsam id quae hic! Blanditiis nulla earum consequuntur obcaecati explicabo. Non, nisi.</p>
-                    <a href="product-.html" class="view-info_button_two">More info</a>
-                </div>
-            </div>
-            <div class="product-container_two">
-                <div class="product_two">
-                    <img src="images/movie-eight.jpg" alt="Movie eight" class="product_image_two">
-                    <h3>Lorem Ipsum dolor sit</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nisi consequuntur repellendus modi pariatur ratione perferendis nesciunt distinctio laborum, aperiam ipsam id quae hic! Blanditiis nulla earum consequuntur obcaecati explicabo. Non, nisi.</p>
-                    <a href="product-info.html" class="view-info_button_two">More info</a>
-                </div>
-            </div>
-            <div class="product-container_two">
-                <div class="product_two">
-                    <img src="images/movie-one.jpg" alt="Movie one" class="product_image_two">
-                    <h3>Lorem Ipsum dolor sit</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nisi consequuntur repellendus modi pariatur ratione perferendis nesciunt distinctio laborum, aperiam ipsam id quae hic! Blanditiis nulla earum consequuntur obcaecati explicabo. Non, nisi.</p>
-                    <a href="product-info.html" class="view-info_button_two">More info</a>
-                </div>
-            </div>
-            <div class="product-container_two">
-                <div class="product_two">
-                    <img src="images/movie-two.jpg" alt="Movie two" class="product_image_two">
-                    <h3>Lorem Ipsum dolor sit</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nisi consequuntur repellendus modi pariatur ratione perferendis nesciunt distinctio laborum, aperiam ipsam id quae hic! Blanditiis nulla earum consequuntur obcaecati explicabo. Non, nisi.</p>
-                    <a href="product-info.html" class="view-info_button_two">More info</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <h2>More recommendations for you</h2>
-    <section class="center_column-container">
-        <div class="products_section">
             <div class="product-container">
                 <div class="product">
                     <img src="images/movie-three.jpg" alt="Movie three" class="product_image">

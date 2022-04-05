@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Square Eyes, the ultimate streaming service for both independent filmmakers and watchers" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Square Eyes | Home</title>
+</head>
+<body>
+<header>
+    <section class="container_one">
+        <div class="logo-item">
+           <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Square Eyes logo" class="logo" /></a>
+        </div>
+        <div class="hamburger-item">    
+            <input type="checkbox" id="hamburger-menu">
+            <label for="hamburger-menu"><img src="images/hamburger-menu.svg" alt="Hamburger menu" class="hamburger-dropdown" /></label>
+            <nav>
+                <a href="index.html" class="home_text">Home<img src="images/home_icon.svg" class="home_icon" /></a>
+                <a href="search.html" class="search_text">Search<img src="images/search.svg" class="search_icon" /></a>
+                <a href="account.html" class="account_text">Account<img src="images/account.svg" class="account_icon" /></a>
+                <a href="contact.html" class="help_text">Help<img src="images/help.svg" class="help_icon" /></a>
+                <a href="landing-page.html" class="log-out_text">Log out<img src="images/log-out.svg" class="log-out_icon" /></a>
+            </nav>
+        </div>
+    </section>
+</header>
+<main>
+    <section class="center_form">
+        <form action="form-success.php" method="post">
+            <fieldset>
+                <h1 class="legend">Payment info</h1>
+                <p><img src="images/visa_icon.png" class="visa_icon" /><img src="images/mastercard-logo.svg" class="mastercard_icon" /><img src="images/paypal.svg" class="paypal_icon" /></p>
+                <p class="form-text_bold">Choose a payment option:</p>
+                <label for="payment">Credit card</label>
+                <input type="radio" name="payment" id="card" value="credit card">
+                <label for="payment">PayPal</label>
+                <input type="radio" name="payment" id="paypal" value="paypal">
+                <br><br><br><br><br>
+                <p class="form-text_bold">Please fill in the details below:</p>
+                <br>
+                <label for="name">Credit card name</label>
+                <input type="text" name="name" id="name" class="form__input">
+                <label for="card-number">Credit card number</label>
+                <input type="tel" name="card-number" id="name" class="form__input">
+                <label for="expiration-date">Expiration date (e.g. 01/24)</label>
+                <input type="tel" name="expiration-date" id="expiration-date" class="form__input">
+                <label for="CVV">CVV code (three last digits)</label>
+                <input type="tel" name="CVV" id="CVV" class="form__input">
+                <p></p>
+                <p class="form-text_bold">Choose a card type:</p>
+                <label for="card-type">Visa</label>
+                <input type="radio" name="card-type" id="visa" value="visa">
+                <label for="card-type">Mastercard</label>
+                <input type="radio" name="card-type" id="mastercard" value="mastercard">
+                <br><br><br><br>
+                <p><a href="purchase-complete.html" class="checkout-button">Checkout</a></p>
+                <br><br>
+            </fieldset>
+        </form>
+    </section>
+</main>
+<footer>
+    <a href="index.html" class="footer_text">Home<img src="images/home_icon.svg" class="home_icon_two" /></a>
+    <a href="search.html" class="footer_text">Search<img src="images/search.svg" class="search_icon_two" /></a>
+    <a href="account.html" class="footer_text">Account<img src="images/account.svg" class="account_icon_two" /></a>
+    <a href="contact.html" class="footer_text">Help<img src="images/help.svg" class="help_icon_two" /></a>
+    <p></p>
+    <p class="no_word-spacing">Square Eyes&copy;<em id="=date"></em>2022 All rights reserved | <a>Read our terms & conditions | Contact us</a></p>
+</footer>
+</body>
+</html>
