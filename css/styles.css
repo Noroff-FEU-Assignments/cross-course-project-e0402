@@ -321,7 +321,7 @@ nav img {
 }
 
 h4 {
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 30px;
   font-size: 1.1em;
 }
@@ -393,13 +393,13 @@ form {
 
 .checkout-button {
   background-color: #bf443f;
-  padding: 7px 26px;
+  padding: 8px 32px;
   border-radius: 25px;
   text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #ffffff;
   box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
 }
@@ -424,6 +424,47 @@ form {
 .form-text_bold {
   font-weight: 700;
   font-size: 1.2em;
+}
+
+/*Purchase complete page*/
+
+.purchase_complete_border {
+  border: 3px;
+  color: #000;
+}
+
+.h2_top-margin {
+  margin-top: 40px;
+}
+
+.purchase_complete_icon {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.center_paragraph {
+  text-align: center;
+  font-size: 1.31em;
+}
+
+.center_complete_button {
+  text-align: center;
+}
+
+.film_purchases_button {
+  background-color: #373736;
+  padding: 10px 38px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #ffffff;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
 }
 
 /*footer*/
@@ -739,6 +780,10 @@ footer p a {
   footer {
     line-height: 1.1;
     height: 95px;
+  }
+
+  .product_three {
+    height: 600px;
   }
 }
 
