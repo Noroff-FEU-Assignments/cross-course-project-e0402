@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Square Eyes | View movie info</title>
+    <title>Square Eyes | Payment details</title>
 </head>
 <body>
 <header>
@@ -30,26 +30,41 @@
     </section>
 </header>
 <main>
-    <section class="container_two">
-        <a href="http://www.facebook.com"><img src="images/facebook-icon.svg" alt="Facebook icon" class="media_icons"></a>
-        <a href="http://www.instagram.com"><img src="images/instagram-icon.svg" alt="Instagram icon" class="media_icons"></a>
-        <a href="http://www.gmail.com"><img src="images/newsletter-icon.svg" alt="Newsletter icon" class="media_icons"></a>    
-    </section>
-    <h1 class="featured_title">More info about this movie<img src="images/play-button.svg" class="play_icon"></h1>    
-    <section class="center_column-container">
-        <div class="products_section_three">
-            <div class="product-container_two">
-                <div class="product_three">
-                    <img src="images/movie-seven.jpg" alt="Movie seven" class="product_image_three">
-                    <h3 class="center_product-info">Lorem Ipsum dolor sit</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nisi consequuntur repellendus modi pariatur ratione perferendis nesciunt distinctio laborum, aperiam ipsam id quae hic! Blanditiis nulla earum consequuntur obcaecati explicabo. Non, nisi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, nisi consequuntur repellendus modi pariatur ratione perferendis nesciunt.</p>
-                    <h4><span class="regular-text">Price:</span>100 NOK</h4>
-                    <div class="button_center">
-                    <a href="registration.html" class="view-info_button_three">Buy now</a>
-                    </div>
+    <section class="center_form">
+        <form action="form-success.php" method="post">
+            <fieldset>
+                <h1 class="legend">Create account</h1>
+                <p>Already have one? Log in by clicking here:</p>
+                <div class="center_complete_button">
+                    <a href="account.html" class="film_purchases_button">Log in</a>
                 </div>
-            </div>
-        </div>
+                <p class="form-text_bold">Choose a payment option:</p>
+                <label for="payment">Credit card</label>
+                <input type="radio" name="payment" id="card" value="credit card">
+                <label for="payment">PayPal</label>
+                <input type="radio" name="payment" id="paypal" value="paypal">
+                
+                <p class="form-text_bold">Please fill in the details below:</p>
+                
+                <label for="name">Credit card name</label>
+                <input type="text" name="name" id="name" class="form__input">
+                <label for="card-number">Credit card number</label>
+                <input type="tel" name="card-number" id="name" class="form__input">
+                <label for="expiration-date">Expiration date (e.g. 01/24)</label>
+                <input type="tel" name="expiration-date" id="expiration-date" class="form__input">
+                <label for="CVV">CVV code (three last digits)</label>
+                <input type="tel" name="CVV" id="CVV" class="form__input">
+                <p></p>
+                <p class="form-text_bold">Choose a card type:</p>
+                <label for="card-type">Visa</label>
+                <input type="radio" name="card-type" id="visa" value="visa">
+                <label for="card-type">Mastercard</label>
+                <input type="radio" name="card-type" id="mastercard" value="mastercard">
+               
+                <p><a href="payment-details.html" class="checkout-button">Create account</a></p>
+                
+            </fieldset>
+        </form>
     </section>
 </main>
 <footer>
