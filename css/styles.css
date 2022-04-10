@@ -427,8 +427,132 @@ form {
   border-radius: 25px;
   height: 35px;
   width: 310px;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Create account*/
+
+.registration_container {
+  display: grid;
+  grid-gap: 30px;
+  height: 1000px;
+}
+
+.registration_container div input,
+label {
+  margin-bottom: 40px;
+}
+
+.registration_container h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.registration_container div div {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.registration_container label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.registration_container h1 {
+  margin-bottom: 100px;
+}
+
+.registration_container p {
+  font-size: 1.3em;
+}
+
+/*Log in*/
+
+.log-in_container {
+  display: grid;
+  height: 500px;
+}
+
+.log-in_container h1 {
+  margin-bottom: 0px;
+}
+
+.log-in_container label,
+input {
+  margin-bottom: 40px;
+}
+
+.log-in_container label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.log-in_button {
+  background-color: #efd566;
+  padding: 10px 58px;
+  border-radius: 25px;
+  border: 0.5px solid #000;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #000;
+  box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+}
+
+/*Contact*/
+
+.contact_container {
+  display: grid;
+  height: 1160px;
+  max-width: 310px;
+}
+
+.contact_container h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact_container label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.contact_container p {
+  line-height: 2.2em;
+}
+
+.contact_container div input,
+label {
+  margin-bottom: 40px;
+}
+
+textarea {
+  padding: 100px 75px;
+}
+
+/*Payment info*/
+
+.payment-info_container {
+  display: grid;
+  grid-gap: 0px;
+  height: 1100px;
+}
+
+.payment-info_container div input,
+label {
+  margin-bottom: 40px;
+}
+
+.payment-info_container h1 {
+  margin-bottom: 60px;
+}
+
+.payment-info_container label {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .checkout-button {
@@ -656,8 +780,6 @@ footer p a {
 
   .form__input {
     width: 500px;
-    margin-top: 10px;
-    margin-bottom: 45px;
   }
 
   .visa_icon {
@@ -675,6 +797,16 @@ footer p a {
     width: 115px;
     margin-bottom: 20px;
     margin-left: 20px;
+  }
+
+  /*Contact*/
+
+  .contact_container {
+    max-width: 700px;
+  }
+
+  textarea {
+    padding: 140px 200px;
   }
 
   /*Footer*/
