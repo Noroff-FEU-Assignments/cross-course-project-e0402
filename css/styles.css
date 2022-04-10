@@ -872,8 +872,9 @@ footer p a {
   }
 
   .logo_center {
-    width: 300px;
+    width: 290px;
     margin-bottom: 50px;
+    margin-top: 15px;
   }
 
   .logo {
