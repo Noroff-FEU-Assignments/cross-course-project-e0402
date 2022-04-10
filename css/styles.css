@@ -847,7 +847,7 @@ footer p a {
 
   .headphones_image,
   .popcorn_image {
-    width: 300px;
+    width: 250px;
   }
 
   .headphones_image {
@@ -856,11 +856,11 @@ footer p a {
 
   .landing-page_button a {
     padding: 12px 32px;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .landing-page_grid {
-    margin-top: 60px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 1fr 1fr;
@@ -899,6 +899,10 @@ footer p a {
 
   .hamburger-dropdown {
     display: none;
+  }
+
+  .hamburger-item {
+    padding-top: 0px;
   }
 
   nav a {
