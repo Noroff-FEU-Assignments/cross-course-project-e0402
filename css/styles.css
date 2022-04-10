@@ -39,6 +39,11 @@ h3 {
   margin-top: 75px;
 }
 
+.text_align {
+  text-align: left;
+  margin-left: 39px;
+}
+
 body {
   background-color: #ededed;
   background-image: url("../images/texture_line.svg");
@@ -237,6 +242,7 @@ nav img {
 .help_icon {
   padding-left: 20.5px;
 }
+
 .log-out_icon {
   padding-left: 38px;
 }
@@ -435,8 +441,21 @@ form {
 
 .registration_container {
   display: grid;
-  grid-gap: 30px;
-  height: 1000px;
+  grid-gap: 10px;
+  height: 1030px;
+  border-radius: 50px;
+}
+
+.log-in_border {
+  background-color: #ffffff;
+  border: 0.5px solid #969696;
+  border-radius: 25px;
+  padding-top: 25px;
+  height: 150px;
+}
+
+.registration_margin {
+  margin-top: 60px;
 }
 
 .registration_container div input,
@@ -444,23 +463,23 @@ label {
   margin-bottom: 40px;
 }
 
+.width_icon {
+  width: 45px;
+}
+
 .registration_container h1 {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .registration_container div div {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
 .registration_container label {
   display: inline-block;
   margin-bottom: 5px;
-}
-
-.registration_container h1 {
-  margin-bottom: 100px;
 }
 
 .registration_container p {
@@ -471,16 +490,23 @@ label {
 
 .log-in_container {
   display: grid;
-  height: 500px;
+  height: 600px;
+  border-radius: 50px;
+}
+
+.log-in_container p {
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .log-in_container h1 {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .log-in_container label,
 input {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .log-in_container label {
@@ -506,13 +532,18 @@ input {
 
 .contact_container {
   display: grid;
-  height: 1160px;
+  height: 1260px;
   max-width: 310px;
+  border-radius: 50px;
 }
 
 .contact_container h1 {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+.contact_container div p {
+  margin-top: 20px;
 }
 
 .contact_container label {
@@ -531,14 +562,15 @@ label {
 
 textarea {
   padding: 100px 75px;
+  border-radius: 25px;
 }
 
 /*Payment info*/
 
 .payment-info_container {
   display: grid;
-  grid-gap: 0px;
   height: 1100px;
+  border-radius: 50px;
 }
 
 .payment-info_container div input,
@@ -702,8 +734,9 @@ footer p a {
 }
 
 @media only screen and (min-width: 650px) {
-  .logo {
-    width: 150px;
+  .hamburger-item {
+    margin-right: 10px;
+    padding-top: 21px;
   }
 
   body {
@@ -736,40 +769,6 @@ footer p a {
 
   .style_search-bar {
     width: 420px;
-  }
-
-  /*Navigation menu*/
-
-  nav {
-    height: 35px;
-    display: block;
-    position: static;
-    background-color: transparent;
-  }
-
-  .hamburger-dropdown {
-    display: none;
-  }
-
-  nav a {
-    display: inline;
-    margin: 10px;
-    color: #000;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 900;
-  }
-
-  nav img {
-    background: transparent;
-  }
-
-  .help_text {
-    display: none;
-  }
-
-  .home_text {
-    padding-right: 15px;
   }
 
   /*Forms*/
@@ -817,8 +816,7 @@ footer p a {
     margin-top: 0px;
   }
 
-  .movies_icon,
-  .help_icon {
+  .movies_icon {
     display: none;
   }
 
@@ -886,6 +884,44 @@ footer p a {
     background-size: 65%, 13%;
   }
 
+  .contact_container {
+    grid-gap: 20px;
+  }
+
+  /*Navigation menu*/
+
+  nav {
+    height: 35px;
+    display: block;
+    position: static;
+    background-color: transparent;
+  }
+
+  .hamburger-dropdown {
+    display: none;
+  }
+
+  nav a {
+    display: inline;
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 900;
+  }
+
+  nav img {
+    background: transparent;
+  }
+
+  .home_text {
+    padding-right: 15px;
+  }
+
+  .help_icon {
+    padding-left: 8px;
+  }
+
   /*Search bar*/
 
   .style_search-bar {
@@ -950,11 +986,23 @@ footer p a {
     line-height: 2;
     height: 95px;
   }
+
+  /*Create account*/
+
+  .registration_margin {
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   body {
     background-size: 50%, 10%;
+  }
+
+  /*Navigation menu*/
+
+  nav a {
+    font-size: 1.1em;
   }
 }
 
@@ -1026,10 +1074,27 @@ footer p a {
   .product_three {
     height: 600px;
   }
-}
 
-.style_search-bar {
-  margin-bottom: 90px;
+  .contact_container div p {
+    margin-top: 0px;
+  }
+
+  /*Create account*/
+  .registration_container {
+    height: 1060px;
+  }
+
+  .contact_container {
+    height: 1280px;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+  }
+
+  .style_search-bar {
+    margin-bottom: 90px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1079,5 +1144,11 @@ footer p a {
   .view-info_button_two {
     margin-left: 198.5px;
     margin-top: 0px;
+  }
+
+  /*Payment info*/
+
+  .payment-info_container {
+    height: 1200px;
   }
 }
