@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Square Eyes | Account</title>
+    <title>Square Eyes | Payment details</title>
     <!-- Hotjar Tracking Code for https://62533e86abc4910009cbb706--aquamarine-tulumba-5396d2.netlify.app/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -69,40 +69,102 @@
       </section>
     </header>
     <main>
-      <section class="container_two">
-        <a href="http://www.facebook.com"
-          ><img
-            src="images/facebook-icon.svg"
-            alt="Facebook icon"
-            class="media_icons"
-        /></a>
-        <a href="http://www.instagram.com"
-          ><img
-            src="images/instagram-icon.svg"
-            alt="Instagram icon"
-            class="media_icons"
-        /></a>
-        <a href="http://www.gmail.com"
-          ><img
-            src="images/newsletter-icon.svg"
-            alt="Newsletter icon"
-            class="media_icons"
-        /></a>
+      <h1 class="center_form headline-margin">Checkout</h1>
+      <section>
+        <ul class="order-trail">
+          <div>
+            <a href="checkout-one.html">Cart/payment method ></a>
+          </div>
+          <div>
+            <a href=""
+              ><span class="current_page_two">Payment details ></span></a
+            >
+          </div>
+          <div>
+            <a href="" class="text-decoration">Purchase complete!</a>
+          </div>
+        </ul>
       </section>
-      <h1>Account</h1>
-      <img src="images/old-camera.svg" class="old_camera_icon" />
-      <section class="account_buttons_container">
-        <div class="account_button">
-          <a href="account.html">Personal details</a>
+      <section class="checkout_grid-container_two">
+        <div>
+          <fieldset class="payment-info_container">
+            <div>
+              <p class="form-text_bold">Please fill in the details below:</p>
+              <label for="name">Card name*</label>
+              <input
+                type="name"
+                name="name"
+                id="name"
+                placeholder="  John Doe"
+                class="form-input_two"
+              />
+              <label for="card-number">Card number*</label>
+              <input
+                type="tel"
+                name="card-number"
+                id="tel"
+                placeholder="  1234 1234 1234 1234"
+                class="form-input_two"
+              />
+            </div>
+            <div class="card-info_grid">
+              <div>
+                <label for="expiration-date">Expiration date*</label>
+                <input
+                  type="tel"
+                  name="expiration-date"
+                  id="expiration-date"
+                  placeholder="  01/25"
+                  class="form__input"
+                />
+              </div>
+              <div>
+                <label for="CVV">CVV code*</label>
+                <input
+                  type="tel"
+                  name="CVV"
+                  id="CVV"
+                  placeholder="  123"
+                  class="form__input"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="save-card">Save card</label>
+              <input type="checkbox" name="save-card" id="save-card" />
+            </div>
+            <div>
+              <a href="purchase_complete.html" class="checkout-button"
+                >Checkout</a
+              >
+            </div>
+          </fieldset>
         </div>
-        <div class="account_button">
-          <a href="account.html">Account settings</a>
-        </div>
-        <div class="account_button">
-          <a href="account.html">Film purchases</a>
-        </div>
-        <div class="account_button">
-          <a href="account.html">Payment info</a>
+        <div class="hide-table_mobile">
+          <section class="checkout_grid-container_two checkout-row_styling">
+            <div>
+              <div class="checkout-row_styling table-height_one">MOVIE</div>
+              <div class="checkout-row_styling table-height_two">Lorem</div>
+              <div class="checkout-row_styling table-height_one">MVA</div>
+              <div class="checkout-row_styling table-height_two">25%</div>
+            </div>
+            <div>
+              <div class="checkout-row_styling table-height_one">PRICE</div>
+              <div class="checkout-row_styling table-height_two">100 NOK</div>
+              <div class="checkout-row_styling table-height_one">AMOUNT</div>
+              <div class="checkout-row_styling table-height_two">25 NOK</div>
+            </div>
+          </section>
+          <section class="checkout_grid-container_two checkout-row_styling">
+            <div>
+              <div class="checkout-row_styling table-height_three">
+                ORDER TOTAL:
+              </div>
+            </div>
+            <div>
+              <div class="checkout-row_styling table-height_three">100 NOK</div>
+            </div>
+          </section>
         </div>
       </section>
     </main>

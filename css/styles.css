@@ -12,13 +12,18 @@ h1 {
   font-size: 2.3em;
 }
 
+.headline-margin {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
 .italic {
   font-style: italic;
   margin-right: 8px;
 }
 
 h2 {
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 1.75em;
   margin-bottom: 45px;
 }
@@ -27,16 +32,16 @@ h2 {
   margin-top: 0px;
 }
 
+.margin_top {
+  margin-top: 100px;
+}
+
 h3 {
   margin-bottom: 30px;
   font-family: "Inter";
   font-weight: normal;
   font-weight: 600;
   font-size: 1.3em;
-}
-
-.featured_title {
-  margin-top: 75px;
 }
 
 .text_align {
@@ -159,6 +164,10 @@ p {
 
 /*Search bar*/
 
+.search-bar-margin {
+  margin-top: 90px;
+}
+
 .style_search-bar {
   padding: 13px;
   width: 320px;
@@ -228,7 +237,7 @@ nav img {
 }
 
 .search_icon {
-  padding-left: 28px;
+  width: 25px;
 }
 
 .account_icon {
@@ -255,22 +264,38 @@ nav img {
   text-decoration: underline;
 }
 
+.current_page_two {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
 /*Products*/
 
+.product-info_margin {
+  margin-bottom: 0px;
+}
 .products_section {
   display: grid;
   grid-template-columns: repeat(2, 180px);
-  grid-gap: 0px;
+  grid-gap: 10px;
 }
 
 .product-container {
-  height: 290px;
+  height: 400px;
 }
 
 .product {
   border: 1px solid rgb(192, 192, 192);
   background: rgb(243, 243, 243);
-  height: 280px;
+  height: 360px;
+}
+
+.featured-product_background {
+  background: rgb(255, 255, 255);
 }
 
 .view-info_button {
@@ -288,7 +313,6 @@ nav img {
 }
 
 .product_image {
-  margin-bottom: 35px;
   width: 170px;
   margin-top: 8px;
   margin-left: 4px;
@@ -337,7 +361,6 @@ nav img {
 .camera_icon {
   width: 45px;
   margin-left: 10px;
-  margin-top: 30px;
 }
 
 .products_section_two {
@@ -356,7 +379,7 @@ nav img {
   border: 1px solid rgb(192, 192, 192);
   background: rgb(250, 250, 250);
   line-height: 2.3em;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 200px;
 }
 
@@ -367,7 +390,6 @@ nav img {
 }
 
 h4 {
-  margin-top: 50px;
   margin-bottom: 30px;
   font-size: 1.1em;
 }
@@ -384,6 +406,10 @@ h4 {
   font-size: 1.4em;
 }
 
+.center_product-info_two {
+  text-align: center;
+}
+
 .play_icon {
   width: 35px;
   margin-left: 5px;
@@ -395,15 +421,16 @@ h4 {
 }
 
 .view-info_button_three {
-  background-color: #373736;
+  background-color: #efd566;
   padding: 6px 38px;
   border-radius: 25px;
+  border: 0.5px solid #000;
   text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 1.1em;
-  color: #ffffff;
+  color: #000;
   box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
   margin-bottom: 60px;
 }
@@ -426,15 +453,34 @@ form {
 .legend {
   margin-bottom: 75px;
   font-size: 2.6em;
+  margin-top: 0px;
 }
 
 .form__input {
+  width: 100px;
+}
+
+.form__input,
+.form-input_two,
+.form-input_three,
+.contact_input {
   display: block;
-  border-radius: 25px;
+  border-radius: 8px;
   height: 35px;
-  width: 310px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.form-input_two {
+  width: 240px;
+}
+
+.form-input_three {
+  width: 250px;
+}
+
+.contact_input {
+  width: 300px;
 }
 
 /*Create account*/
@@ -494,14 +540,8 @@ label {
   border-radius: 50px;
 }
 
-.log-in_container p {
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-
 .log-in_container h1 {
   margin-bottom: 30px;
-  margin-top: 50px;
 }
 
 .log-in_container label,
@@ -514,25 +554,42 @@ input {
   margin-bottom: 5px;
 }
 
-.log-in_button {
-  background-color: #efd566;
-  padding: 10px 58px;
+.log-in_button,
+.sign-up_button {
   border-radius: 25px;
-  border: 0.5px solid #000;
   text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 1.1em;
-  color: #000;
+
   box-shadow: 0.5px 2px 5px 2px rgb(65, 65, 65);
+}
+
+.log-in_button {
+  background-color: #373736;
+  padding: 10px 102px;
+  border: 1px solid #000;
+  color: rgb(255, 255, 255);
+}
+
+.sign-up_button {
+  background-color: rgb(232, 232, 232);
+  padding: 10px 53.5px;
+  border: 0.5px solid #000;
+  color: #000;
 }
 
 /*Contact*/
 
+.error-contact-form {
+  display: none;
+  color: red;
+}
+
 .contact_container {
   display: grid;
-  height: 1260px;
+  height: 1220px;
   max-width: 310px;
   border-radius: 50px;
 }
@@ -567,15 +624,90 @@ textarea {
 
 /*Payment info*/
 
-.payment-info_container {
+.order-trail {
   display: grid;
-  height: 1100px;
-  border-radius: 50px;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
 }
 
-.payment-info_container div input,
-label {
-  margin-bottom: 40px;
+.order-trail div a {
+  color: #000;
+  font-style: bold;
+}
+.checkout_grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+}
+
+.checkout_grid-container_two {
+  text-align: center;
+  max-width: 300px;
+}
+
+.checkout_grid-container,
+.checkout_grid-container_two {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide-table_mobile {
+  display: none;
+}
+
+.checkout-row_styling {
+  border: 0.5px solid rgb(171, 171, 171);
+}
+
+.checkout-two_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table-height_one {
+  background: rgb(202, 202, 202);
+  padding: 18px;
+  text-align: center;
+}
+
+.table-height_two {
+  padding: 15px;
+  text-align: center;
+}
+
+.table-height_three {
+  background: rgb(171, 171, 171);
+  padding: 25px;
+  text-align: center;
+}
+
+.center_payment-options {
+  display: grid;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-info_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.style_payment-option {
+  border: 0.5px solid rgb(75, 75, 75);
+  padding-top: 20px;
+  padding-left: 250px;
+  padding-right: 250px;
+  max-width: 1000px;
+  box-shadow: 0.5px 2px 5px 2px rgb(136, 136, 136);
+}
+
+.payment-info_container {
+  border-radius: 8px;
+  max-width: 300px;
+  height: 465px;
 }
 
 .payment-info_container h1 {
@@ -601,20 +733,21 @@ label {
 }
 
 .visa_icon {
-  width: 40px;
-  margin-bottom: 0px;
+  width: 50px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 .mastercard_icon {
-  width: 35px;
-  margin-bottom: 7px;
+  width: 40px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 
 .paypal_icon {
-  width: 95px;
-  margin-bottom: 8px;
-  margin-left: 20px;
+  width: 115px;
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .form-text_bold {
@@ -748,11 +881,12 @@ footer p a {
   .products_section {
     grid-template-columns: repeat(3, 200px);
   }
-
+  .product {
+    height: 385px;
+  }
   .product_image {
     width: 192px;
     margin-left: 4px;
-    margin-bottom: 27px;
   }
 
   .view-info_button {
@@ -774,38 +908,18 @@ footer p a {
   /*Forms*/
 
   form {
-    margin-top: 90px;
-  }
-
-  .form__input {
-    width: 500px;
-  }
-
-  .visa_icon {
-    width: 50px;
-    margin-bottom: 10px;
-  }
-
-  .mastercard_icon {
-    width: 40px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-  }
-
-  .paypal_icon {
-    width: 115px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
   }
 
   /*Contact*/
 
   .contact_container {
     max-width: 700px;
+    height: 1030px;
   }
 
   textarea {
-    padding: 140px 200px;
+    padding: 80px 200px;
   }
 
   /*Footer*/
@@ -838,7 +952,8 @@ footer p a {
 
   footer {
     font-size: 1em;
-    height: 120px;
+    line-height: 0;
+    height: 220px;
   }
 }
 
@@ -947,14 +1062,13 @@ footer p a {
   .product_image {
     width: 220px;
     margin-left: 4px;
-    margin-bottom: 39px;
   }
 
   .product {
-    height: 330px;
+    height: 410px;
   }
   .product-container {
-    height: 340px;
+    height: 450px;
   }
 
   .view-info_button {
@@ -989,13 +1103,25 @@ footer p a {
 
   footer {
     line-height: 2;
-    height: 95px;
+    height: 200px;
   }
 
   /*Create account*/
 
   .registration_margin {
     margin-bottom: 40px;
+  }
+
+  /*Payment info*/
+
+  .checkout_grid-container_two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+  }
+
+  .hide-table_mobile {
+    display: unset;
   }
 }
 
@@ -1012,12 +1138,8 @@ footer p a {
 }
 
 @media only screen and (min-width: 1000px) {
-  p {
-    margin-bottom: 40px;
-  }
-
   .product {
-    height: 410px;
+    height: 485px;
   }
 
   .products_section {
@@ -1025,7 +1147,7 @@ footer p a {
   }
 
   .product-container {
-    height: 435px;
+    height: 510px;
   }
 
   .product_image {
@@ -1059,7 +1181,6 @@ footer p a {
 
   .products_section_three {
     max-width: 1000px;
-    margin-top: 10px;
   }
 
   .product_three {
@@ -1069,11 +1190,12 @@ footer p a {
   .product_image_three {
     float: left;
     margin-right: 30px;
+    max-width: 600px;
   }
 
   footer {
-    line-height: 1.1;
-    height: 95px;
+    line-height: 0;
+    height: 180px;
   }
 
   .product_three {
@@ -1100,6 +1222,11 @@ footer p a {
   .style_search-bar {
     margin-bottom: 90px;
   }
+
+  /*Contact*/
+  .contact_container {
+    height: 1045px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1113,7 +1240,7 @@ footer p a {
   }
 
   p {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   .products_section {
@@ -1121,16 +1248,16 @@ footer p a {
   }
 
   .product-container {
-    height: 325px;
+    height: 400px;
   }
 
   .product_image {
     width: 202px;
-    margin-left: 4px;
+    margin-left: 3px;
   }
 
   .product {
-    height: 310px;
+    height: 400px;
   }
 
   .view-info_button {
@@ -1151,9 +1278,7 @@ footer p a {
     margin-top: 0px;
   }
 
-  /*Payment info*/
-
-  .payment-info_container {
-    height: 1200px;
+  .contact_container {
+    height: 1080px;
   }
 }

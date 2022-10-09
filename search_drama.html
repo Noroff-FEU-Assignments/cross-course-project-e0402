@@ -52,11 +52,8 @@
               class="hamburger-dropdown"
           /></label>
           <nav>
-            <a href="home.html" class="home_text"
+            <a href="home.html" class="home_text current_page"
               >Home<img src="images/home_icon.svg" class="home_icon"
-            /></a>
-            <a href="search.html" class="search_text current_page"
-              >Search<img src="images/search.svg" class="search_icon"
             /></a>
             <a href="log-in.html" class="account_text"
               >Account<img src="images/account.svg" class="account_icon"
@@ -72,55 +69,41 @@
       </section>
     </header>
     <main>
-      <section class="container_two">
-        <a href="http://www.facebook.com"
-          ><img
-            src="images/facebook-icon.svg"
-            alt="Facebook icon"
-            class="media_icons"
-        /></a>
-        <a href="http://www.instagram.com"
-          ><img
-            src="images/instagram-icon.svg"
-            alt="Instagram icon"
-            class="media_icons"
-        /></a>
-        <a href="http://www.gmail.com"
-          ><img
-            src="images/newsletter-icon.svg"
-            alt="Newsletter icon"
-            class="media_icons"
-        /></a>
-      </section>
       <section>
-        <h1>Choose a category <span class="italic">or</span> type something</h1>
+        <h1>Browse our wide selection of movies</h1>
       </section>
       <section class="movie_categories">
+        <div>
+          <a href="home.html" class="category_styling">All</a>
+        </div>
         <div class="selected_movie">
-          <a href="" class="category_styling_two">Drama</a>
+          <a href="search_drama.html" class="category_styling_two">Drama</a>
         </div>
         <div>
-          <a href="" class="category_styling">Comedy</a>
+          <a href="search_comedy.html" class="category_styling">Comedy</a>
         </div>
         <div>
-          <a href="" class="category_styling">Thriller</a>
+          <a href="search_action.html" class="category_styling">Action</a>
         </div>
         <div>
-          <a href="" class="category_styling">Action</a>
+          <a href="search_sci-fi.html" class="category_styling">Sci-fi</a>
         </div>
         <div>
-          <a href="" class="category_styling">Sci-fi</a>
-        </div>
-        <div>
-          <a href="" class="category_styling">History</a>
+          <a href="search_history.html" class="category_styling">History</a>
         </div>
       </section>
       <section class="center_search-bar">
-        <form action="submit.php" method="post">
-          <input type="search" name="searchbar" class="style_search-bar" />
+        <form action="submit.php" method="post" class="search-bar-margin">
+          <input
+            type="search"
+            name="searchbar"
+            placeholder="  Looking for something specific? Search for it here!"
+            class="style_search-bar"
+          />
+          <img src="images/search.svg" class="search_icon" />
         </form>
       </section>
-      <h2 class="no_top-margin">Top rated dramas</h2>
+      <h2 class="no_top-margin">Drama</h2>
       <section class="center_column-container">
         <div class="products_section">
           <div class="product-container">
@@ -130,6 +113,8 @@
                 alt="Movie one"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -140,6 +125,8 @@
                 alt="Movie two"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -150,6 +137,8 @@
                 alt="Movie three"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -160,6 +149,8 @@
                 alt="Movie four"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -170,6 +161,8 @@
                 alt="Movie five"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -180,6 +173,8 @@
                 alt="Movie six"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -190,6 +185,8 @@
                 alt="Movie three"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -200,6 +197,8 @@
                 alt="Movie four"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -210,6 +209,8 @@
                 alt="Movie five"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -220,6 +221,8 @@
                 alt="Movie six"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -230,6 +233,8 @@
                 alt="Movie seven"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -240,6 +245,8 @@
                 alt="Movie eight"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -250,6 +257,8 @@
                 alt="Movie one"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -260,6 +269,8 @@
                 alt="Movie two"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -270,6 +281,8 @@
                 alt="Movie three"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -280,6 +293,8 @@
                 alt="Movie four"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -290,6 +305,8 @@
                 alt="Movie five"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -300,6 +317,8 @@
                 alt="Movie six"
                 class="product_image"
               />
+              <h4>Movie title</h4>
+              <p class="center_product-info_two">130 min - 100 NOK</p>
               <a href="product-info.html" class="view-info_button">View info</a>
             </div>
           </div>
@@ -310,9 +329,6 @@
       <a href="home.html" class="footer_text"
         >Home<img src="images/home_icon.svg" class="home_icon_two"
       /></a>
-      <a href="search.html" class="footer_text"
-        >Search<img src="images/search.svg" class="search_icon_two"
-      /></a>
       <a href="log-in.html" class="footer_text"
         >Account<img src="images/account.svg" class="account_icon_two"
       /></a>
@@ -320,6 +336,24 @@
         >Contact<img src="images/help.svg" class="help_icon_two"
       /></a>
       <p></p>
+      <a href="http://www.facebook.com"
+        ><img
+          src="images/facebook-icon.svg"
+          alt="Facebook icon"
+          class="media_icons"
+      /></a>
+      <a href="http://www.instagram.com"
+        ><img
+          src="images/instagram-icon.svg"
+          alt="Instagram icon"
+          class="media_icons"
+      /></a>
+      <a href="http://www.gmail.com"
+        ><img
+          src="images/newsletter-icon.svg"
+          alt="Newsletter icon"
+          class="media_icons"
+      /></a>
       <p class="no_word-spacing">
         Square Eyes&copy;<em id="=date"></em>2022 All rights reserved |
         <a>Read our terms & conditions</a>
