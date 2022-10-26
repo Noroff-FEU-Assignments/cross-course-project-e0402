@@ -15,7 +15,7 @@ fetchProducts();
 
 function creatHTML(product) {
   products.forEach(function (product) {
-    productContainer.innerHTML += `<div class="product>
+    productContainer.innerHTML = `<div class="product>
             <img src="${product.image[0].src}" alt="${product.name}">
         </div>`;
   });
