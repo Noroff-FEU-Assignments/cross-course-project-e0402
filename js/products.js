@@ -18,6 +18,7 @@ function createHTML(products_section) {
     console.log(product);
     productContainer.innerHTML += `<div class="product-container">
         <div class="product featured-product_background">
+            <img src="${product.name[0].src}" alt="${product.name}">
             <h4>${product.name}</h4>
             <a href="product-info.html" class="view-info_button">View info</a>
         </div>
