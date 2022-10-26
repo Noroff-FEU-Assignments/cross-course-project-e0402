@@ -18,6 +18,9 @@ function createHTML(product) {
     console.log(product);
     productContainer.innerHTML += `<div>
         <h4>${product.name}</h4>
+        <div class="product featured-product_background">
+              <a href="product-info.html" class="view-info_button">View info</a>
+            </div>
     </div>`;
   });
 }
