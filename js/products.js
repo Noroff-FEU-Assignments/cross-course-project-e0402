@@ -1,5 +1,5 @@
 const url = "https://schoolproject.tech/flowerpower/wp-json/wc/store/products";
-const productContainer = document.querySelector(".product");
+const productContainer = document.querySelector(".products_section");
 
 async function fetchProducts() {
   try {
@@ -13,11 +13,14 @@ async function fetchProducts() {
 
 fetchProducts();
 
-function createHTML(product) {
-  product.forEach(function (product) {
+function createHTML(products_section) {
+  products_section.forEach(function (product) {
     console.log(product);
-    productContainer.innerHTML += `<div>
-        <h4>${product.name}</h4>
+    productContainer.innerHTML += `<div class="product-container">
+        <div class="product featured-product_background">
+            <h4>${product.name}</h4>
+            <a href="product-info.html" class="view-info_button">View info</a>
+        </div>
     </div>`;
   });
 }
