@@ -15,6 +15,7 @@ fetchProducts();
 
 function createHTML(product) {
   product.forEach(function (product) {
+    console.log(product);
     productContainer.innerHTML += `<div>
         <img src="${product.image[0].src}" alt="${product.name}">
         <h4>${product.name}</h4>
