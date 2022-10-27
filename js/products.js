@@ -19,7 +19,7 @@ function createHTML(products_section) {
     const image = product.images[0].src;
     productContainer.innerHTML += `<div class="product-container">
         <div class="product featured-product_background">
-            <img src="${product.name[0].src}" style="background-image:url('${image}'); alt="${product.name}">
+            <div style="background-image:url('${image}');" alt="${product.name}"></div>
             <h4>${product.name}</h4>
             <a href="product-info.html" class="view-info_button">View info</a>
         </div>
