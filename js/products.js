@@ -14,7 +14,7 @@ async function fetchProducts() {
 fetchProducts();
 
 function createHTML(products_section) {
-  products_section.forEach((product) => {
+  for(let = 0 <5; i++) {
     productContainer.innerHTML += `<div class="product-container">
         <div class="product featured-product_background">
             <img src="${product.images[0].src}" class="product_image" alt="${product.name}">
