@@ -275,6 +275,9 @@ nav img {
 
 /*Products*/
 
+.center-price {
+  text-align: center;
+}
 .product-info_margin {
   margin-bottom: 0px;
 }
