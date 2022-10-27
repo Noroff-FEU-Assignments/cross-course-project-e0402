@@ -14,9 +14,15 @@ async function fetchProducts() {
 fetchProducts();
 
 function createHTML(products_section) {
-  products_section.forEach((product) => {
+  products_section.forEach(function (product) {
+    console.log(product);
     const image = product.images[0].src;
-    productContainer.innerHTML += `<div class="movies"><h2>${product.name}</h2></div><div class="movies-image"
-            style="background-image:url('${image}');"></div>`;
+    productContainer.innerHTML += `<div class="product-container">
+        <div class="product featured-product_background">
+            <img src="${product.name[0].src}" style="background-image:url('${image}'); alt="${product.name}">
+            <h4>${product.name}</h4>
+            <a href="product-info.html" class="view-info_button">View info</a>
+        </div>
+    </div>`;
   });
 }
