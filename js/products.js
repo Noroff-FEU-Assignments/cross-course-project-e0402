@@ -19,7 +19,7 @@ function createHTML(products_section) {
     productContainer.innerHTML += `<div class="product-container">
         <div class="product featured-product_background">
             <div style="background-image:url('${image}');" alt="${product.name}"></div>
-            <h4>${product.name}</h4>
+            <div><h4>${product.name}</h4></div>
             <a href="product-info.html" class="view-info_button">View info</a>
         </div>
     </div>`;
