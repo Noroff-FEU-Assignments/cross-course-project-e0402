@@ -1,5 +1,6 @@
-const url = "https://schoolproject.tech/flowerpower/wp-json/wc/store/products";
-const productContainer = document.querySelector(".products_section");
+const url =
+  "https://schoolproject.tech/flowerpower/wp-json/wc/store/products&featured=true";
+const productContainer = document.querySelector(".featured_section");
 
 async function fetchProducts() {
   try {
@@ -13,8 +14,8 @@ async function fetchProducts() {
 
 fetchProducts();
 
-function createHTML(products_section) {
-  products_section.forEach((product) => {
+function createHTML(featured_section) {
+  featured_section.forEach((product) => {
     productContainer.innerHTML += `<div class="product-container">
         <div class="product featured-product_background">
             <img src="${product.images[0].src}" class="product_image" alt="${product.name}">

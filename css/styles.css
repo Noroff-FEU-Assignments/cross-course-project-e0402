@@ -281,7 +281,8 @@ nav img {
 .product-info_margin {
   margin-bottom: 0px;
 }
-.products_section {
+.products_section,
+.featured_section {
   display: grid;
   grid-template-columns: repeat(2, 180px);
   grid-gap: 10px;
@@ -881,7 +882,8 @@ footer p a {
     background-size: 65%, 15%;
     background-position: top right, top left;
   }
-  .products_section {
+  .products_section,
+  .featured_section {
     grid-template-columns: repeat(3, 200px);
   }
   .product {
@@ -1078,7 +1080,8 @@ footer p a {
     margin-left: 57.5px;
   }
 
-  .products_section {
+  .products_section,
+  .featured_section {
     grid-template-columns: repeat(3, 230px);
   }
 
@@ -1145,7 +1148,8 @@ footer p a {
     height: 485px;
   }
 
-  .products_section {
+  .products_section,
+  .featured_section {
     grid-template-columns: repeat(3, 307px);
   }
 
@@ -1246,7 +1250,8 @@ footer p a {
     margin-bottom: 30px;
   }
 
-  .products_section {
+  .products_section,
+  .featured_section {
     grid-template-columns: repeat(6, 210px);
   }
 
