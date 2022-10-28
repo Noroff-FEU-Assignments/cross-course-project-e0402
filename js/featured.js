@@ -20,7 +20,6 @@ function createHTML(featured_section) {
         <div class="product featured-product_background">
             <img src="${product.images[0].src}" class="product_image" alt="${product.name}">
             <h4>${product.name}</h4>
-            <p class="center-price">Price: ${product.prices.price} NOK</p>
             <a href="product-info.html" class="view-info_button">View info</a>
         </div>
     </div>`;
