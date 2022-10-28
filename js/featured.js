@@ -5,8 +5,8 @@ const detailsContainer = document.querySelector(".products_section_three");
 async function fetchDetails() {
   try {
     const response = await fetch(url);
-    const fetchResults = await response.json();
-    createHTML(fetchResults);
+    const fetchResultsss = await response.json();
+    createHTML(fetchResultsss);
   } catch (error) {
     console.log(error);
   }
