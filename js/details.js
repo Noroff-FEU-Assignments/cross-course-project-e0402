@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = `https://schoolproject.tech/flowerpower/wp-json/wc/v3/products/"${id}?consumer_key=ck_6c90a14e6f8635c6ec35e78ebd8f73b23a0647cc&consumer_secret=cs_f1de37e9ba6d73daacf712e2536c593462ddce89`;
+const url = `https://schoolproject.tech/flowerpower/wp-json/wc/v3/products/${id}?consumer_key=ck_6c90a14e6f8635c6ec35e78ebd8f73b23a0647cc&consumer_secret=cs_f1de37e9ba6d73daacf712e2536c593462ddce89`;
 async function fetchDetails() {
   try {
     const response = await fetch(url);
