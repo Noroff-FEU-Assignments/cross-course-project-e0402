@@ -6,6 +6,9 @@ async function fetchProducts() {
   try {
     const response = await fetch(featuredUrl);
     const fetchResults = await response.json();
+
+    featuredProductsContainer.innerHTML = "";
+
     createHTML(fetchResults);
   } catch (error) {
     console.log(error);

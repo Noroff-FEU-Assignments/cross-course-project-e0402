@@ -14,6 +14,8 @@ async function fetchDetails() {
     const response = await fetch(url);
     const details = await response.json();
 
+    detailsContainer.innerHTML = "";
+
     console.log(details);
 
     createHTML(details);
