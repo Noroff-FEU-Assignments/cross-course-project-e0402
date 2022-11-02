@@ -8,7 +8,6 @@ async function fetchProducts() {
     console.log(products);
 
     createProducts(products);
-    handleCategoryButtons(products);
   } catch (error) {
     console.log(error);
   }
@@ -19,11 +18,9 @@ fetchProducts();
 function createProducts(products) {
   const productsContainer = document.querySelector(".products_section");
 
-  productsContainer.innerHTML = "";
-
   products.forEach(function (product) {
     productsContainer.innerHTML += `<div class="product-container">
-	                                  <div class="product">
+	                                  <div class="product ${product.category}">
 	                                    <img src="${product.images[0].src}" alt="Woman in a white dress wearing a tiara in front of a waterfall" class="product_image" />
 	                                    <h4>${product.name}</h4>
 	                                    <p class="center_product-info_two">Price: ${product.price} NOK</p>
@@ -33,32 +30,26 @@ function createProducts(products) {
   });
 }
 
-function handleCategoryButtons(allProducts) {
-  const btns = document.querySelectorAll(".category_styling");
+const btns = document.querySelectorAll(".category_styling");
+const movieProducts = document.querySelectorAll(".product");
 
-  if (btns.length === 0) {
-    return console.log("No category buttons found");
-  }
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", (e) => {
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
 
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", (e) => {
-      const filter = e.target.dataset.filter;
+    console.log(filter);
 
-      console.log(filter);
-      const filteredProducts = handleCategoryFiltering(allProducts, filter);
-      createProducts(filteredProducts);
+    movieProducts.forEach((product) => {
+      if (filter === "New") {
+        product.style.display = "block";
+      } else {
+        if (product.classList.contains(filter)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      }
     });
-  }
-}
-
-function handleCategoryFiltering(allProducts, filter) {
-  const filteredProducts = allProducts.filter(function (product) {
-    if (product.categories.some((category) => category.name === filter)) {
-      return true;
-    }
   });
-
-  console.log(filteredProducts);
-
-  return filteredProducts;
 }
