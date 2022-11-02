@@ -17,10 +17,6 @@ fetchProducts();
 
 function createProducts(products) {
   const productsContainer = document.querySelector(".products_section");
-  const categoryTitleOne = document.querySelector(".delete-one");
-  const categoryTitleTwo = document.querySelector(".delete-two");
-
-  productsContainer.innerHTML = "";
 
   products.forEach(function (product) {
     productsContainer.innerHTML += `<div class="product-container">
@@ -31,101 +27,29 @@ function createProducts(products) {
 	                                    <a href="product-info.html?id=${product.id}" class="view-info_button">View info</a>
 	                                  </div>
 	                                </div>`;
+  });
+}
 
-    const filterButtonOne = document.querySelector(".filter-button-one");
-    const filterButtonTwo = document.querySelector(".filter-button-two");
-    const filterButtonThree = document.querySelector(".filter-button-three");
-    const filterButtonFour = document.querySelector(".filter-button-four");
-    const filterButtonFive = document.querySelector(".filter-button-five");
-    const btnOne = document.getElementById("btn-one");
-    const btnTwo = document.getElementById("btn-two");
-    const btnThree = document.getElementById("btn-three");
-    const btnFour = document.getElementById("btn-four");
-    const btnFive = document.getElementById("btn-five");
+const btns = document.querySelectorAll(".category_styling");
+const movieProducts = document.querySelectorAll(".product");
 
-    btnOne.addEventListener("click", function onClick() {
-      btnOne.style.backgroundColor = "#373736";
-      btnOne.style.color = "white";
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", (e) => {
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
+
+    console.log(filter);
+
+    movieProducts.forEach((product) => {
+      if (filter === "all") {
+        product.style.display = "block";
+      } else {
+        if (product.text.contains(filter)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      }
     });
-
-    btnTwo.addEventListener("click", function onClick() {
-      btnTwo.style.backgroundColor = "#373736";
-      btnTwo.style.color = "white";
-    });
-
-    btnThree.addEventListener("click", function onClick() {
-      btnThree.style.backgroundColor = "#373736";
-      btnThree.style.color = "white";
-    });
-
-    btnFour.addEventListener("click", function onClick() {
-      btnFour.style.backgroundColor = "#373736";
-      btnFour.style.color = "white";
-    });
-
-    btnFive.addEventListener("click", function onClick() {
-      btnFive.style.backgroundColor = "#373736";
-      btnFive.style.color = "white";
-    });
-
-    function checkNameOne(product) {
-      return product.name === "Lorem (Drama)";
-    }
-
-    function checkNameTwo(product) {
-      return product.name === "Lorem (Comedy)";
-    }
-
-    function checkNameThree(product) {
-      return product.name === "Lorem (Action)";
-    }
-
-    function checkNameFour(product) {
-      return product.name === "Lorem (Sci-fi)";
-    }
-
-    function checkNameFive(product) {
-      return product.name === "Lorem (History)";
-    }
-
-    filterButtonOne.onclick = function filterMoviesOne() {
-      const filteredMoviesOne = products.filter(checkNameOne);
-      featuredProductsContainer.innerHTML = "";
-      categoryTitleOne.innerHTML = "Drama";
-      categoryTitleTwo.innerHTML = "";
-      createProducts(filteredMoviesOne);
-    };
-
-    filterButtonTwo.onclick = function filterMoviesTwo() {
-      const filteredMoviesTwo = products.filter(checkNameTwo);
-      featuredProductsContainer.innerHTML = "";
-      categoryTitleOne.innerHTML = "Comedy";
-      categoryTitleTwo.innerHTML = "";
-      createProducts(filteredMoviesTwo);
-    };
-
-    filterButtonThree.onclick = function filterMoviesThree() {
-      const filteredMoviesThree = products.filter(checkNameThree);
-      featuredProductsContainer.innerHTML = "";
-      categoryTitleOne.innerHTML = "Action";
-      categoryTitleTwo.innerHTML = "";
-      createProducts(filteredMoviesThree);
-    };
-
-    filterButtonFour.onclick = function filterMoviesFour() {
-      const filteredMoviesFour = products.filter(checkNameFour);
-      featuredProductsContainer.innerHTML = "";
-      categoryTitleOne.innerHTML = "Sci-fi";
-      categoryTitleTwo.innerHTML = "";
-      createProducts(filteredMoviesFour);
-    };
-
-    filterButtonFive.onclick = function filterMoviesFive() {
-      const filteredMoviesFive = products.filter(checkNameFive);
-      featuredProductsContainer.innerHTML = "";
-      categoryTitleOne.innerHTML = "History";
-      categoryTitleTwo.innerHTML = "";
-      createProducts(filteredMoviesFive);
-    };
   });
 }
