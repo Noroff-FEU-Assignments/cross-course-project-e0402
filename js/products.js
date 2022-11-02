@@ -41,10 +41,10 @@ for (let i = 0; i < btns.length; i++) {
     console.log(filter);
 
     movieProducts.forEach((product) => {
-      if (filter === "all") {
+      if (filter === "New") {
         product.style.display = "block";
       } else {
-        if (product.text.contains(filter)) {
+        if (product.classList.contains(filter)) {
           product.style.display = "block";
         } else {
           product.style.display = "none";
