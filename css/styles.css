@@ -1309,4 +1309,8 @@ footer p a {
   .contact_container {
     height: 1080px;
   }
+
+  .ok {
+    background-color: #bf443f;
+  }
 }

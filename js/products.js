@@ -34,7 +34,7 @@ function createProducts(products) {
 }
 
 function handleCategoryButtons(allProducts) {
-  const btns = document.querySelectorAll(".category_styling");
+  const btns = document.querySelectorAll("button");
 
   if (btns.length === 0) {
     return console.log("No category buttons found");
@@ -43,9 +43,13 @@ function handleCategoryButtons(allProducts) {
   for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", (e) => {
       const filter = e.target.dataset.filter;
+      const categoryTitle = document.querySelector(".category-title");
+
+      categoryTitle.innerHTML = e.target.dataset.filter;
 
       console.log(filter);
       const filteredProducts = handleCategoryFiltering(allProducts, filter);
+
       createProducts(filteredProducts);
     });
   }
