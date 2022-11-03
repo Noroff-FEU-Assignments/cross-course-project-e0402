@@ -33,6 +33,15 @@ function createProducts(products) {
   });
 }
 
+let buttons = document.querySelectorAll(".category_styling");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    buttons.forEach((btn) => btn.classList.remove(".category_styling_two"));
+    this.classList.add(".category_styling_two");
+  });
+});
+
 function handleCategoryButtons(allProducts) {
   const btns = document.querySelectorAll("button");
 
