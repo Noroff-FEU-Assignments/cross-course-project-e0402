@@ -33,15 +33,6 @@ function createProducts(products) {
   });
 }
 
-let buttons = document.querySelectorAll(".category_styling");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", function () {
-    buttons.forEach((btn) => btn.classList.remove(".category_styling_two"));
-    this.classList.add(".category_styling_two");
-  });
-});
-
 function handleCategoryButtons(allProducts) {
   const btns = document.querySelectorAll("button");
 
@@ -50,11 +41,13 @@ function handleCategoryButtons(allProducts) {
   }
 
   for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", (e) => {
-      const filter = e.target.dataset.filter;
+    btns[i].addEventListener("click", (event) => {
+      const filter = event.target.dataset.filter;
       const categoryTitle = document.querySelector(".category-title");
 
-      categoryTitle.innerHTML = e.target.dataset.filter;
+      handleCategoryButtonClasses(event.target, btns);
+
+      categoryTitle.innerHTML = event.target.dataset.filter;
 
       console.log(filter);
       const filteredProducts = handleCategoryFiltering(allProducts, filter);
@@ -62,6 +55,11 @@ function handleCategoryButtons(allProducts) {
       createProducts(filteredProducts);
     });
   }
+}
+
+function handleCategoryButtonClasses(clickedElement, allButtons) {
+  allButtons.forEach((btn) => btn.classList.remove("category_styling_two"));
+  clickedElement.classList.add("category_styling_two");
 }
 
 function handleCategoryFiltering(allProducts, filter) {
